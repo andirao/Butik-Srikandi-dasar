@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("menu-btn");
   const navMenu = document.getElementById("nav-menu");
   const slides = document.getElementById("carousel-slides");
-  const keranjang = document.querySelectorAll(".keranjang");
+  const keranjang = ".keranjang";
   const count = document.getElementById("count");
 
   menuBtn.addEventListener("click", () => {
