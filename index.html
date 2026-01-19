@@ -9,7 +9,7 @@
   </head>
   <body class="bg-[#E5DCCA] text-gray-800 font-serif">
     <div
-      class="navbar flex w-auto h-20 bg-[#E5DCCA] border-b-4 border-[#D4AF37]"
+      class="navbar fixed flex w-full h-20 bg-[#E5DCCA] border-b-4 border-[#D4AF37] z-1"
     >
       <img class="ml-2" src="/img/logo.png" alt="srikandi-logo" />
       <div class="brand my-3">
@@ -56,13 +56,25 @@
             <a href="#Feedback">Feedback</a>
           </li>
         </ul>
-
-        <button
-          id="menu-btn"
-          class="md:hidden mx-8 my-5 w-10 h-10 rounded-[1vw] border-3 border-[#D4AF37] text-[#D4AF37] hover:bg-blue-950"
-        >
-          ☰
-        </button>
+        <div class="flex itmes-center">
+          <div
+            class="relative -right-4 -bottom-6 w-10 h-10 p-1 mx-auto text-[#D4AF37] lg:-left-10"
+          >
+            <i data-feather="shopping-cart"></i>
+            <div
+              id="count"
+              class="count absolute w-5 h-5 bg-slate-200 -top-1 -right-1 right-1 rounded-full flex items-center justify-center text-slate-900"
+            >
+              0
+            </div>
+          </div>
+          <button
+            id="menu-btn"
+            class="md:hidden mx-8 my-5 w-10 h-10 rounded-[1vw] border-3 border-[#D4AF37] text-[#D4AF37] hover:bg-blue-950"
+          >
+            ☰
+          </button>
+        </div>
       </div>
     </div>
     <div id="Home" class="relative border-b-4 border-[#D4AF37] z-0">
@@ -125,7 +137,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <button
-                class="flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
+                class="keranjang flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
               >
                 <i class="mx-2" data-feather="shopping-bag"></i>
                 Tambah ke Keranjang
@@ -150,7 +162,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <button
-                class="flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
+                class="keranjang flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
               >
                 <i class="mx-2" data-feather="shopping-bag"></i>
                 Tambah ke Keranjang
@@ -175,7 +187,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <button
-                class="flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
+                class="keranjang flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
               >
                 <i class="mx-2" data-feather="shopping-bag"></i>
                 Tambah ke Keranjang
@@ -200,7 +212,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <button
-                class="flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
+                class="keranjang flex items-center justify-center bg-[#D4AF37] text-white px-2 py-2 rounded-lg hover:bg-yellow-500 transition-colors font-serif"
               >
                 <i class="mx-2" data-feather="shopping-bag"></i>
                 Tambah ke Keranjang
